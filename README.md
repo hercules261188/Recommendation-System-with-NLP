@@ -2,8 +2,8 @@
 
 1. Presentation Notes (optional)
 2. Basic dataset
-3. Data Cleaning
-4. NLP + after dataset  (final_df)
+3. Data Cleaning (fo_dataframe.py)
+4. NLP.py + after dataset  (final_df)
 5. pickle + pickle.py
 6. Recommendation (Content-based)
 7. Flask deployment (everything, requirements)
