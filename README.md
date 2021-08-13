@@ -9,8 +9,11 @@ This repository hold a NLP project utilizing Natural Language Processing (NLP), 
 
 <br><br>
 
-## 
-
+## Deployment Approach 
+1. Open ***pickle_cos.ipynb*** and import ***final_df*** to get the ***'cos_similarity.pkl'*** (put in the same folder)
+2. Go to the folder path with ```cd {folder path}```
+3. Run the app.py in terminal under the virtual environment with commend ```flask run```
+4. Go to the ```local host link``` shows on terminal
 <br><br>
 
 
