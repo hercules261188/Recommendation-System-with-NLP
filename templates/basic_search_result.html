@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container">
+        <h1>Here is the top 10 recommended product for sale</h1>
+        <br/>
+        <br/>
+
+        <table class="table table-hover">
+            <thead>
+                <th scope="col">Items</th>
+                  <th scope="col">Manufacturer</th>
+                  <th scope="col">Price Range</th>
+                  <th scope="col">Link</th>
+            </thead>
+            <tbody>
+                <form action="/product_info" method="POST">
+                {% for i in range(prediction|length) %}
+                <tr>
+                    <td>{{prediction[i]}}</td>
+                    <td>{{manufacturer_list[i]}}</td>
+                    <td>{{price_list[i]}}</td>
+                    <td >
+                        <div class = 'wordcloud'>
+                            <button type='submit' class="btn btn-outline-primary" name="{{prediction[i]}}"> 
+                                Click me
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                {% endfor %}
+                </form>
+                
+            </tbody>
+
+          </table>
+    </div>
+{% endblock %}
