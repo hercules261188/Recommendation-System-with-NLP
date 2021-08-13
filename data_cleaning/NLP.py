@@ -9,7 +9,7 @@ from string import punctuation
 
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
-df = pd.read_csv('final_df_new.csv')
+df = pd.read_csv('data/final_df_new.csv')
 df['customer_reviews_sent_tokens'] = df['customer_reviews'].apply(lambda x: x.split('//')[::4])
 
 
@@ -41,4 +41,4 @@ def sentiment_analyzer(review_col):
 
 df['summary_sentiment'] = sentiment_analyzer(df['customer_reviews_sent_tokens'])
 
-df.to_csv('final_include_NLP_df_13aug0539.csv')
+df.to_csv('final_df.csv')
